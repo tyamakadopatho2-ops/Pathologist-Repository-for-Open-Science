@@ -787,7 +787,7 @@ gene_sets <- list(
   FAO_mito            = c("Cpt1a","Cpt1b","Acadvl","Acadm","Hadha","Hadhb","Echs1","Etfdh","Etfb","Acaa2"),
   FAO_perox           = c("Acox1","Ehhadh","Hsd17b4","Abcd3","Acot1","Pecr","Pex11a"),
   
-  # 既存の代謝系（先生のまま）
+  # 既存の代謝系
   OxPhos          = c("Ndufa1","Ndufa2","Ndufb5","Cox4i1","Atp5f1a","Atp5f1b","Atp5mc1","Uqcrc1","Uqcrq",
                       "Ndufs2","Ndufb8","Cox5a","Cox6a1","Atp5me","Atp5md","Uqcrc2","Uqcrfs1"),
   TCA_cycle       = c("Cs","Aco2","Idh3a","Idh3b","Ogdh","Dlst","Sucb1","Sdha","Sdhb","Fh1","Mdh2","Pck2","Mpc1","Mpc2","Pdhb","Dlat"),
@@ -849,7 +849,7 @@ camera_all_sets <- function(ct,
   
   ## -- デザイン
   X <- .build_design_nocov(y, labs)
-  # 注意：voom は design を必要とします。camera は voom オブジェクトを受け取ります。
+  # 注意：voom は design が必要。camera は voom オブジェクトを受け取る。
   v <- voom(y, X, plot = FALSE)
   
   ## -- コントラスト
@@ -1148,51 +1148,8 @@ p_vol <- if (has_ggrepel) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## ======================================================================
-## NicheNet × Seurat v5  再現可能フルスクリプト（最新安定 / 2025-08-14）
-## 目的：
-##  - 環境依存を避けて “必ず走る”
-##  - 途中で止まっても “なぜ止まったか” がログに残る
-##  - 最新 CRAN/Bioc + nichenetr v2.2.0 を子プロセスで導入
-##  - Seurat v5 Assay5/layer 差分に対応（冪等）
-##  - aggregate ラッパーで失敗時は公開APIへ自動フォールバック
+## NicheNet × Seurat v5  再現可能フルスクリプト（最新 / 2025-08-14）
 ## ======================================================================
 ## ---- 0. 設定：パス（必要に応じて調整） --------------------------------------
 logfile <- "C:/DMD_project/exprdata/nichenet_run_mhc_high.log"
@@ -1288,7 +1245,7 @@ cli::cli_inform(c(
   "i" = paste("nichenetr", as.character(packageVersion("nichenetr")))
 ))
 
-## 4) 入力ファイル（先生のパスに合わせています）
+## 4) 入力ファイル
 rds_dir <- "C:/DMD_project/exprdata"
 paths <- list(
   ligand_target_matrix = file.path(rds_dir, "ligand_target_matrix_nsga2r_final_mouse.rds"),
@@ -1375,7 +1332,7 @@ cli::cli_inform(c(
 
 
 ## 8) NicheNet 本体：aggregate ラッパーを素直に呼ぶ
-##    （assay_oi = 'RNA' を明示。expression_pct は先生の既定 0.1）
+##    （assay_oi = 'RNA' を明示。expression_pct は既定 0.1）
 ligand_target_matrix <- as.matrix(ligand_target_matrix)
 
 cli::cli_h1("Run NicheNet (aggregate wrapper)")
@@ -1622,9 +1579,6 @@ print(nnk_panels$combined)
 
 # 保存する場合
 # ggsave("expr_lfc_two_panel.pdf", nnk_panels$combined, width = 9, height = 4.5, useDingbats = FALSE)
-
-
-
 
 
 ## ---- 15. 簡易サマリ出力 -------------------------------------------------------
@@ -2255,33 +2209,6 @@ res_macro1[grep("MHC-low macrophage", rownames(res_macro1)),
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## ==== Pseudobulk camera + fgsea pipeline (Seurat v5) =======================
 suppressPackageStartupMessages({
   library(Seurat); library(SeuratObject); library(Matrix)
@@ -2300,7 +2227,7 @@ muscle_sc <- readRDS(obj_path)
 stopifnot(inherits(muscle_sc, "Seurat"))
 DefaultAssay(muscle_sc) <- "RNA"
 
-## 1) scDblFinder を layer 単位で実行（先生の方針を踏襲）
+## 1) scDblFinder を layer 単位で実行
 layers_all <- Layers(muscle_sc[["RNA"]])
 layers <- setdiff(grep("^counts(\\.|$)", layers_all, value = TRUE), "counts")
 dbl_class <- setNames(rep(NA_character_, ncol(muscle_sc)), colnames(muscle_sc))
@@ -2433,7 +2360,7 @@ get_pathways_safe <- function(collections = c("REACTOME","GO:BP","CP:KEGG"),
   out_list
 }
 
-## ==== 擬似バルク: celltypeごとの limma-voom + camera & fgsea（先生の設計踏襲） ====
+## ==== 擬似バルク: celltypeごとの limma-voom + camera & fgsea ====
 ## 前提: pb_counts は genes x samples のカウント行列、
 ##       列名は "Celltype_sampleLabel" 形式（例: "Myocyte/Myonucleus_mdx1"）
 ## ==== 前提：pb_counts は genes x samples の擬似バルク行列 ====
@@ -2448,7 +2375,6 @@ suppressPackageStartupMessages({
 BiocParallel::register(BiocParallel::SerialParam())
 data.table::setDTthreads(1)
 
-## 先生の前提を再掲
 stopifnot(exists("pb_counts"))  # genes x samples
 .get_cols_by_ct <- function(ct) {
   pfx <- paste0(ct, "_")
@@ -2494,7 +2420,7 @@ run_ct_tests_safe <- function(ct,
   
   genes_in <- rownames(vfit)
   
-  ## ---- ここが肝: camera と fgsea で渡す形式を分ける ----
+  ## ---- camera と fgsea で渡す形式を分ける ----
   ## fgsea 用：遺伝子名リスト（サイズ制約を同時にかける）
   pw_list <- lapply(pathways, function(gs) intersect(gs, genes_in))
   sz <- vapply(pw_list, length, 1L)
@@ -2542,7 +2468,7 @@ pathways_all <- get_pathways_safe(
   species     = "Mus musculus",
   min_size    = 10, max_size = 500,
   gmt_files   = list(
-    # 先生のローカルに置いたGMTがあればパスを指定（無ければNULLのままでOK）
+    # ローカルに置いたGMTがあればパスを指定（無ければNULLのままで）
     # "REACTOME" = "data/c2.cp.reactome.mouse.symbols.gmt",
     # "GO:BP"    = "data/c5.go.bp.mouse.symbols.gmt",
     # "CP:KEGG"  = "data/c2.cp.kegg.symbols.gmt"
@@ -2550,7 +2476,7 @@ pathways_all <- get_pathways_safe(
   )
 )
 
-## パスウェイ集合（先生の get_pathways_safe の出力をそのまま渡せます）
+## パスウェイ集合
 ## pathways_all は “名前付きリスト: パスウェイ名 -> 遺伝子名ベクター”
 stopifnot(exists("pathways_all"))
 
@@ -2661,7 +2587,7 @@ suppressPackageStartupMessages({
   library(ggplot2); library(ggridges); library(dplyr); library(stringr); library(data.table)
 })
 
-## 1) fgsea 上位20（先生が貼ってくださった表と同じ集合・順序）をそのまま使う
+## 1) fgsea 上位20をそのまま使う
 ids_to_show <- as.character(
   res_myocyte$fgsea[pathway %in% focus_kept][order(padj)][1:20, ]$pathway
 )
@@ -2701,7 +2627,7 @@ build_ridge_df <- function(stats, gene_sets, ids, sample_each = 1500) {
 
 ridge_df <- build_ridge_df(ranks_named, pathways_all, ids_to_show, sample_each = 1500)
 
-## 5) 見やすいラベルと、色に使う“先生の数値そのもの”
+## 5) 
 format_pathway_labels_clean <- function(pathways, wrap_width = 36){
   lab <- gsub("^REACTOME_|^GOBP_", "", pathways)
   lab <- gsub("_", " ", lab)
@@ -2722,7 +2648,7 @@ fgsea_padj_map <- setNames(res_myocyte$fgsea$padj,  res_myocyte$fgsea$pathway)
 ridge_df$camera_fdr <- camera_fdr_map[ridge_df$pathway]
 ridge_df$fgsea_padj <- fgsea_padj_map[ridge_df$pathway]
 
-## 6) 描画関数（“色=先生の FDR/padj そのもの”、曲線=既存ランクからの再構成）
+## 6) 描画関数
 plot_ridge_constantfill <- function(df, fill_col, title_text, legend_title) {
   ggplot(df, aes(x = es, y = label, group = label, fill = !!as.name(fill_col))) +
     ggridges::geom_density_ridges(scale = 1.2, rel_min_height = 0.01,
@@ -2754,7 +2680,7 @@ check_es <- sapply(ids_to_show, function(id){
   c(reconstructed_ES = es_star,
     fgsea_ES = res_myocyte$fgsea[pathway == id, ES][1])
 })
-print(t(check_es))  # 2列（reconstructed_ES と fgsea_ES）がほぼ一致するはずです
+print(t(check_es))  # 2列（reconstructed_ES と fgsea_ES）がほぼ一致するはず
 
 
 ## ========== FIX: NicheNet 整合・経路ヒットの要約（再計算なし） ==================
@@ -2824,11 +2750,7 @@ print(hit_table)
 
 
 
-
-
-
 suppressPackageStartupMessages({library(ggplot2); library(dplyr); library(stringr)})
-
 ## --- pretty label (英語・略語整形) -------------------------------------------
 format_pathway_id <- function(ids){
   labs <- gsub("^REACTOME_|^GOBP_", "", ids)
