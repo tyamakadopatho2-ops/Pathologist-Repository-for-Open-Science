@@ -1,3 +1,7 @@
+# Copyright (c) 2025 Tetsuhiro Yamakado
+# Licensed under the Apache License, Version 2.0
+# http://www.apache.org/licenses/LICENSE-2.0
+
 ### NOTE FOR RSTUDIO USERS ###
 
 # FIRST, PRESS "Alt + O" (Windows) or "Option + O" (macOS) 
@@ -3396,3 +3400,4 @@ ggplot(data.frame(width = factor(rope_grid),
 ### The R version and package information used in this analysis are available below:
 sessionInfo() 
 # R version 4.3.2 (2023-10-31 ucrt)
+
