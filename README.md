@@ -1,10 +1,28 @@
-How to cite
+# DMD Critical-Period Analyses — Code Archive
+This repository mainly provides a stable, citable archive of analysis code accompanying my Duchenne muscular dystrophy (DMD) studies.  
+Scope: minimal top-level; all analysis scripts live in dedicated branches. The main branch contains this README and the license only.
 
-If you use this repository for published research, please cite the following as your primary references:
+## What this repo is (and is not)
+The goal is reproducibility and scholarly transparency. Each branch includes its own README with exact instructions, versions, and data accession IDs. The main page does not reproduce those details and does not mirror datasets.
 
-Yamakado T, et al. "Myofibre density reveals a critical threshold around age 6 in steroid‑naïve Duchenne muscular dystrophy." 
-(Neuropathology and Applied Neurobiology, 2025; DOI to be added).
+## How to use this archive
+1) Choose the branch that matches the manuscript you want to reproduce.  
+2) Follow that branch’s README end‑to‑end.  
+3) If you need to report a technical issue, open an Issue with the exact branch name and commit hash.
 
-(If applicable) Yamakado T, et al. Cross‑species transcriptomic analysis identifies a molecular phase transition around the clinicopathological critical period in DMD. (manuscript in preparation).
-Please also cite key software dependencies (e.g., limma, edgeR, Seurat, clusterProfiler) and report the repository version (tag/commit) and random seeds (e.g., set.seed(123)) for reproducibility.
-Note: This is a scholarly request under Apache‑2.0 (not a legal requirement). We will update this section with DOIs once available.
+## Reproducibility notes (global)
+Analyses were developed in R (4.x) and/or Python where noted.  
+Randomness is controlled with explicit `set.seed(...)` calls in each branch to ensure bit‑for‑bit repeatability.
+
+## How to cite
+If you use code from a branch in academic work, please cite the corresponding paper for that branch and also cite this repository (branch name and commit hash).  
+Suggested wording:  
+> “We used analysis scripts from the ‘<branch‑name>’ branch (commit <hash>) of the DMD Critical‑Period Analyses repository by T. Yamakado (year), released under the Apache 2.0 license.”
+
+## License
+Copyright (c) 2025 Tetsuhiro Yamakado.  
+Released under the Apache License, Version 2.0.  
+You may use, reproduce, and modify the code under the terms of that license. Third‑party dependencies remain under their own licenses.
+
+## Contact
+Tetsuhiro Yamakado — For questions or bug reports, please open an Issue in this repository.
