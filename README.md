@@ -17,6 +17,5 @@ You can freely read the full-text article using the Wiley Article Share link pro
   https://onlinelibrary.wiley.com/share/author/2NZFPQYZTII9THA4PM3B?target=10.1111/pin.13462
   
 # Notes
-
 This branch is provided for reference, citation, and transparency purposes.
-No analysis scripts or data sets are provided here, as the analyses in this paper were primarily morphological and genomic (OCAV3-based NGS), without R-based reproducible scripts.
+No analysis scripts or data sets are provided here, as the analyses in this paper were primarily morphological and immunohistochemical, without R-based reproducible scripts.
