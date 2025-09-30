@@ -1,7 +1,7 @@
 # Code Archive and Publication Information: DMD Critical-Period Analyses and Surgical Pathology Papers
 This repository provides a stable, citable archive of analysis scripts primarily accompanying my Duchenne muscular dystrophy (DMD) studies, along with additional information and citation details for other published papers (e.g., gastric and lung pathology studies).  
 
-Scope: minimal top-level; all analysis scripts live in dedicated branches. The main branch contains this README and the license only.
+All analysis scripts live in dedicated branches. The main branch contains this README and the license only.
 
 ## What this repo is (and is not)
 The goal is reproducibility and scholarly transparency. Each branch includes its own README with exact instructions, versions, and data accession IDs. The main page does not reproduce those details and does not mirror datasets.
