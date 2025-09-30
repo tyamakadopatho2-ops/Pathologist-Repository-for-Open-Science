@@ -1,23 +1,22 @@
-# Spontaneous Transformation from Lung Adenocarcinoma to <i>MYC</i>‐amplified Large Cell Neuroendocrine Carcinoma
+# Sporadic gastric foveolar‐type adenoma with morular metaplasia
 Overview
 
-This repository branch provides basic information and article access regarding our published research:
+This repository branch provides basic information and access details for our published short report (Letter):
 
-1) Title: Spontaneous Transformation from Lung Adenocarcinoma to <i>MYC</i>‐amplified Large Cell Neuroendocrine Carcinoma
-2) Authors: Tetsuhiro Yamakado, Hanako Sato-Yazawa, Jun Ishii, Korehito Kashiwagi, Taichi Kimura, Zen-ichi Tanei, Takuya Yazawa, Yusuke Ishida, Shinya Tanaka
-3) Journal: Pathology International, 2025
-4) DOI: https://doi.org/10.1111/pin.13507
-5) Abstract (as published)
+1) Title: Sporadic gastric foveolar‐type adenoma with morular metaplasia
+2) Authors: Tetsuhiro Yamakado, Zen-Ichi Tanei, Yuka Ishikawa, Taichi Kimura, Yusuke Ishida, Shinya Tanaka
+3) Journal: Pathology International, 2024
+4) DOI: https://doi.org/10.1111/pin.13462
+5) Brief Summary
 
-     Recent studies suggest that lung adenocarcinoma cells are closely associated with the tumorigenesis of large-cell neuroendocrine carcinoma via cellular transformation. However, morphological evidence, along with genetic abnormalities before, during, and after transformation, is quite limited. We present here a case of combined large-cell neuroendocrine carcinoma and adenocarcinoma exhibiting acinar and solid patterns. Adenocarcinoma cells with abundant mucin, exhibiting positivity for both napsin-A and neuroendocrine markers, were partially found in the acinar adenocarcinoma component and extensively observed in the solid adenocarcinoma component. Next-generation sequencing using extracted genomic DNA from the three components revealed homozygous TP53 (missense) and STK11 (nonsense) mutations in all three components, suggesting monoclonal origin. Furthermore, MYC gene amplification, recently presumed to be a pivotal driver in neuroendocrine transformation, was observed in both the solid adenocarcinoma and large-cell neuroendocrine carcinoma components. These genetic findings corresponded to pre- and post-transformation morphology, providing compelling evidence that some kinds of adenocarcinomas may serve as a precursor of large-cell neuroendocrine carcinoma.
+     This short communication reports the first documented case of a sporadic gastric foveolar-type adenoma (FA) exhibiting morular metaplasia (MM), a rare morphological finding previously unreported in gastric adenomas. The report includes detailed histopathological descriptions, immunohistochemical evaluations, and a concise discussion regarding the diagnostic and pathological significance of this unusual metaplastic change, as well as its biological aggressiveness and genetic abnormalities. The findings emphasize the need for awareness and further investigation of MM in gastric neoplasms, as well as the elucidation of its molecular mechanisms, including potential APC gene alterations in both FA and MM.
 
 
 # Article Share (free access via Wiley Article Share)
 You can freely read the full-text article using the Wiley Article Share link provided below:
-  https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
+  https://onlinelibrary.wiley.com/share/author/2NZFPQYZTII9THA4PM3B?target=10.1111/pin.13462
   
 # Notes
 
 This branch is provided for reference, citation, and transparency purposes.
-
 No analysis scripts or data sets are provided here, as the analyses in this paper were primarily morphological and genomic (OCAV3-based NGS), without R-based reproducible scripts.
