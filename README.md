@@ -10,10 +10,6 @@ This branch specifically archives the analysis scripts and reproducibility mater
 2) Follow the instructions provided in each R script (set seeds are included for exact reproducibility). 
 3) See sessionInfo() and renv.lock for detailed dependency management.
 
-## Reproducibility notes (global)
-Analyses were developed in R (4.x) and/or Python where noted.  
-Randomness is controlled with explicit `set.seed(...)` calls in each branch to ensure bit‑for‑bit repeatability.
-
 ## How to cite
 If you use or refer to this code in your research, please cite the dissertation and this branch explicitly.  
 Suggested wording:  
