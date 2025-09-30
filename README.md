@@ -18,7 +18,7 @@ Randomness is controlled with explicit `set.seed(...)` calls in each branch to e
 ## How to cite
 If you use code from a branch in academic work, please cite the corresponding paper for that branch and also cite this repository (branch name and commit hash).  
 Suggested wording:  
-> “We used analysis scripts from the ‘<branch‑name>’ branch (commit <hash>) of the DMD Critical‑Period Analyses repository by T. Yamakado (year), released under the Apache 2.0 license.”
+> “We used analysis scripts from the ‘<branch‑name>’ branch (commit <hash>) of the DMD Critical‑Period Analyses repository by Yamakado T.  (year), released under the Apache 2.0 license.”
 
 ## License
 Copyright (c) 2025 Tetsuhiro Yamakado.  
