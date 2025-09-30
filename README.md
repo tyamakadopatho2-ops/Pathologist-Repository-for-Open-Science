@@ -1,30 +1,29 @@
-# DMD Critical-Period Analyses — Code Archive
-This repository mainly provides a stable, citable archive of analysis code accompanying my Duchenne muscular dystrophy (DMD) studies.  
-Scope: minimal top-level; all analysis scripts live in dedicated branches. The main branch contains this README and the license only.
+# Spontaneous Transformation from Lung Adenocarcinoma to <i>MYC</i>‐amplified Large Cell Neuroendocrine Carcinoma
+Overview
 
-## What this repo is (and is not)
-The goal is reproducibility and scholarly transparency. Each branch includes its own README with exact instructions, versions, and data accession IDs. The main page does not reproduce those details and does not mirror datasets.
+This repository branch provides basic information and article access regarding our published research:
 
-## How to use this archive
-1) Choose the branch that matches the manuscript you want to reproduce.  
-2) Follow that branch’s README end‑to‑end.  
-3) If you need to report a technical issue, open an Issue with the exact branch name and commit hash.
+1) Title: Spontaneous Transformation from Lung Adenocarcinoma to <i>MYC</i>‐amplified Large Cell Neuroendocrine Carcinoma
 
-## Reproducibility notes (global)
-Analyses were developed in R (4.x) and/or Python where noted.  
-Randomness is controlled with explicit `set.seed(...)` calls in each branch to ensure bit‑for‑bit repeatability.
+2) Authors: Tetsuhiro Yamakado et al.
 
-## How to cite
-If you use code from a branch in academic work, please cite the corresponding paper for that branch and also cite this repository (branch name and commit hash).  
-Suggested wording:  
-> “We used analysis scripts from the ‘<branch‑name>’ branch (commit <hash>) of the DMD Critical‑Period Analyses repository by T. Yamakado (year), released under the Apache 2.0 license.”
+3) Journal: Pathology International, 2025
 
-## License
-Copyright (c) 2025 Tetsuhiro Yamakado.  
-Released under the Apache License, Version 2.0.  
-You may use, reproduce, and modify the code under the terms of that license. Third‑party dependencies remain under their own licenses.
+4) DOI: https://doi.org/10.1111/pin.13507
 
-## Contact
-Tetsuhiro Yamakado — For questions or bug reports, please open an Issue in this repository.
-https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
+5) Abstract (as published)
+Recent studies suggest that lung adenocarcinoma cells are closely associated with the tumorigenesis of large-cell neuroendocrine carcinoma via cellular transformation. However, morphological evidence, along with genetic abnormalities before, during, and after transformation, is quite limited. We present here a case of combined large-cell neuroendocrine carcinoma and adenocarcinoma exhibiting acinar and solid patterns. Adenocarcinoma cells with abundant mucin, exhibiting positivity for both napsin-A and neuroendocrine markers, were partially found in the acinar adenocarcinoma component and extensively observed in the solid adenocarcinoma component. Next-generation sequencing using extracted genomic DNA from the three components revealed homozygous TP53 (missense) and STK11 (nonsense) mutations in all three components, suggesting monoclonal origin. Furthermore, MYC gene amplification, recently presumed to be a pivotal driver in neuroendocrine transformation, was observed in both the solid adenocarcinoma and large-cell neuroendocrine carcinoma components. These genetic findings corresponded to pre- and post-transformation morphology, providing compelling evidence that some kinds of adenocarcinomas may serve as a precursor of large-cell neuroendocrine carcinoma.
 
+
+6) Full-text article (free access via Wiley Article Share)
+
+  You can freely read the full-text article using the Wiley Article Share link provided below:
+
+  https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
+
+
+# Notes
+
+This branch is provided for reference, citation, and transparency purposes.
+
+No analysis scripts or data sets are provided here, as the analyses in this paper were primarily morphological and genomic (OCAV3-based NGS), without R-based reproducible scripts.
