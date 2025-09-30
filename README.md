@@ -26,3 +26,5 @@ You may use, reproduce, and modify the code under the terms of that license. Thi
 
 ## Contact
 Tetsuhiro Yamakado — For questions or bug reports, please open an Issue in this repository.
+https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
+
