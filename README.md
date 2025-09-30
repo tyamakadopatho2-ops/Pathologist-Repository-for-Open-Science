@@ -1,9 +1,8 @@
 # Code Archive
-This branch provides an analysis code accompanying "Myofibre Density Reveals a Critical Threshold around Age 6 in Steroid-Naïve Duchenne Muscular Dystrophy: A Retrospective Observational Study."
-The data and scripts in this repository will be made available following formal publication of the corresponding article in a peer-review journal.
+This branch provides analysis code accompanying “Myofibre Density Reveals a Critical Threshold around Age 6 in Steroid‑Naïve Duchenne Muscular Dystrophy: A Retrospective Observational Study.” To comply with journal policy and preserve anonymous review, the full scripts and any shareable data are temporarily unavailable and will be released upon completion of peer review (e.g., post‑acceptance). Editors/reviewers may request private access if needed.
 
 ## How to cite
-In progress.
+Citation details will be added upon publication; in the meantime, please cite the manuscript as “under review” and reference this branch and commit hash.
 
 ## Reproducibility notes (global)
 Analyses were developed in R.  
