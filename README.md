@@ -19,10 +19,8 @@ Recent studies suggest that lung adenocarcinoma cells are closely associated wit
 6) Full-text article (free access via Wiley Article Share)
 
   You can freely read the full-text article using the Wiley Article Share link provided below:
-
-    https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
-
-
+  https://onlinelibrary.wiley.com/share/author/2MXFK4FTPXPVPTIMAQQ9?target=10.1111/pin.13507
+  
 # Notes
 
 This branch is provided for reference, citation, and transparency purposes.
