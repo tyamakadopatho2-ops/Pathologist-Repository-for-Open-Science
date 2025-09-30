@@ -1,23 +1,23 @@
-# DMD Critical-Period Analyses — Code Archive
-This repository mainly provides a stable, citable archive of analysis code accompanying my Duchenne muscular dystrophy (DMD) studies.  
-Scope: minimal top-level; all analysis scripts live in dedicated branches. The main branch contains this README and the license only.
+# DMD Doctoral Dissetation Analysis — Special Branch
+This branch specifically archives the analysis scripts and reproducibility materials associated with my doctoral dissertation on Duchenne muscular dystrophy (DMD).
 
-## What this repo is (and is not)
-The goal is reproducibility and scholarly transparency. Each branch includes its own README with exact instructions, versions, and data accession IDs. The main page does not reproduce those details and does not mirror datasets.
+## Contents and Purpose
+1) R scripts used for statistical analyses described in my doctoral dissertation.
+2) Clearly documented methods, software versions, and random seeds for complete reproducibility.
 
-## How to use this archive
-1) Choose the branch that matches the manuscript you want to reproduce.  
-2) Follow that branch’s README end‑to‑end.  
-3) If you need to report a technical issue, open an Issue with the exact branch name and commit hash.
+## How to reproduce the analyses
+1) Download or clone this branch.  
+2) Follow the instructions provided in each R script (set seeds are included for exact reproducibility). 
+3) See sessionInfo() and renv.lock for detailed dependency management.
 
 ## Reproducibility notes (global)
 Analyses were developed in R (4.x) and/or Python where noted.  
 Randomness is controlled with explicit `set.seed(...)` calls in each branch to ensure bit‑for‑bit repeatability.
 
 ## How to cite
-If you use code from a branch in academic work, please cite the corresponding paper for that branch and also cite this repository (branch name and commit hash).  
+If you use or refer to this code in your research, please cite the dissertation and this branch explicitly.  
 Suggested wording:  
-> “We used analysis scripts from the ‘<branch‑name>’ branch (commit <hash>) of the DMD Critical‑Period Analyses repository by T. Yamakado (year), released under the Apache 2.0 license.”
+> “We used analysis scripts from the ‘doctoral-dissertation’ branch (commit <insert_commit_hash>) of the DMD Critical-Period Analyses repository by Tetsuhiro Yamakado (2025), released under the Apache 2.0 license.”
 
 ## License
 Copyright (c) 2025 Tetsuhiro Yamakado.  
