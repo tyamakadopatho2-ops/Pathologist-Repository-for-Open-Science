@@ -25,5 +25,9 @@ Copyright (c) 2025 Tetsuhiro Yamakado.
 Released under the Apache License, Version 2.0.  
 You may use, reproduce, and modify the code under the terms of that license. Third‑party dependencies remain under their own licenses.
 
+## List of Publications
+1) Yamakado T, Tanei ZI, Ishikawa Y, Kimura T, Ishida Y, Tanaka S. Sporadic gastric foveolar-type adenoma with morular metaplasia. Pathol Int. 2024;74(8):489-492. doi:10.1111/pin.13462
+2) Yamakado T, Sato-Yazawa H, Ishii J, et al. Spontaneous Transformation from Lung Adenocarcinoma to MYC-amplified Large Cell Neuroendocrine Carcinoma. Pathol Int. 2025;75(2):105-113. doi:10.1111/pin.13507
+
 ## Contact
 Tetsuhiro Yamakado — For questions or bug reports, please open an Issue in this repository.
