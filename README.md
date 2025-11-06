@@ -1,3 +1,5 @@
+# NOTE: The R-scripts are not publicly available at this time because the degree examination is ongoing.
+
 # DMD Doctoral Dissetation Analysis — Special Branch
 This branch specifically archives the analysis scripts and reproducibility materials associated with my doctoral dissertation on Duchenne muscular dystrophy (DMD).
 
