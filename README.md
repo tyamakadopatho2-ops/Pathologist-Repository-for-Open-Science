@@ -15,9 +15,9 @@ If you use this repository directly, please also cite the repository and, where 
 ## Article links
 This article is available as open access and can be accessed via the links below.
 
-Published article: https://onlinelibrary.wiley.com/doi/10.1111/nan.70068
+Published article (Wiley full text, open access): https://onlinelibrary.wiley.com/doi/10.1111/nan.70068
 
-Free full text (PubMed Central): https://pmc.ncbi.nlm.nih.gov/articles/PMC12997517/
+PMC free full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12997517/
 
 ## Reproducibility notes (global)
 Analyses were developed in R.
