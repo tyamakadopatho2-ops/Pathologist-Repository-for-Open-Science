@@ -1,7 +1,7 @@
 # Bulk microarray integration + limma reproduction script
 # ────────────────────────────────────────────────────────────────────────────────
 # Purpose
-#   Build the 4-cohort integration pipeline with a clean object namespace.
+#   Build the 4-cohort integration pipeline.
 #
 # Caution
 #   Archived exploratory/debugging sections are retained as part of the analysis
