@@ -4,8 +4,8 @@
 #   Build the 4-cohort integration pipeline with a clean object namespace.
 #
 # Caution
-#   Some old scripts for debugging are included. Please ignore them. They do not
-#   influence the overall results and interpretations.
+#   Archived exploratory/debugging sections are retained as part of the analysis
+#   record and are not required for interpreting the reported results.
 #────────────────────────────────────────────────────────────────────────────────
 
 
