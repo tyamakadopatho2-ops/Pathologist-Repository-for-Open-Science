@@ -2949,6 +2949,7 @@ plot_chord_for_senders(
 # is retained as part of the analysis record for transparency and for potential reviewer-response checks.
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
+# Run only if sender-side expression/LFC diagnostic plots are required
 # Simple wrapper to draw a single panel
 draw_expr_lfc <- function(senders,
                           ligands = NULL,
