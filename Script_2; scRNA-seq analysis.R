@@ -2920,30 +2920,25 @@ plot_chord_for_senders(
   pct_expr_sender = 0.5
 )
 
-# Simple wrapper to draw a single panel
-draw_expr_lfc <- function(senders,
-                          ligands = NULL,
-                          top_n = 50,
-                          filter_mode = "lenient") {
-  # Automatically derive candidate ligands when not specified
-  ligs <- if (is.null(ligands)) {
-    suggest_ligands_for_senders(senders, top_n = top_n, filter_mode = filter_mode)
-  } else {
-    ligands
-  }
-  
-  # Call the existing function directly (one combined figure is produced here)
-  res <- plot_expr_lfc_from_cache(senders, ligands_to_plot = ligs)
-  print(res$combined)
-  
-  invisible(list(ligands = ligs, res = res))
-}
+  plot_chord_for_senders(
+  c("Pericyte/Vascular SMC","Satellite cell"),
+  color_mode = "origin4",
+  label_n_lig = 40,
+  label_n_tgt = 80,
+  label_cex = 1,
+  label_offset_mm = 0.1,
+  pct_expr_sender = 0.5
+)
 
-draw_expr_lfc(c("Stromal","Pericyte/Vascular SMC","Satellite cell",
-                "Endothelial cell(EC)","MHC-low macrophage",
-                "MHC-high macrophage","Tenocyte/Tendon fibroblast",
-                "Schwann cell"),
-              top_n = 50, filter_mode = "lenient")
+plot_chord_for_senders(
+  c("Tenocyte/Tendon fibroblast","MHC-low macrophage"),
+  color_mode = "origin4",
+  label_n_lig = 40,
+  label_n_tgt = 80,
+  label_cex = 1,
+  label_offset_mm = 0.1,
+  pct_expr_sender = 0.5
+)
 
 
 ### Session information---------------------------------------------------------
