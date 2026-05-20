@@ -2941,6 +2941,40 @@ plot_chord_for_senders(
 )
 
 
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Optional diagnostic visualisation of sender-side expression and LFC. This block reproduces the internal
+# expression/LFC panels used during exploratory inspection of candidate NicheNet ligands. These
+# panels are not included in the submitted Figure 5 and are not required for interpreting the final
+# manuscript. The final manuscript uses chord diagrams as exploratory network visualisations; this block
+# is retained as part of the analysis record for transparency and for potential reviewer-response checks.
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+# Simple wrapper to draw a single panel
+draw_expr_lfc <- function(senders,
+                          ligands = NULL,
+                          top_n = 50,
+                          filter_mode = "lenient") {
+  # Automatically derive candidate ligands when not specified
+  ligs <- if (is.null(ligands)) {
+    suggest_ligands_for_senders(senders, top_n = top_n, filter_mode = filter_mode)
+  } else {
+    ligands
+  }
+  
+  # Call the existing function directly (one combined figure is produced here)
+  res <- plot_expr_lfc_from_cache(senders, ligands_to_plot = ligs)
+  print(res$combined)
+  
+  invisible(list(ligands = ligs, res = res))
+}
+
+draw_expr_lfc(c("Stromal","Pericyte/Vascular SMC","Satellite cell",
+                "Endothelial cell(EC)","MHC-low macrophage",
+                "MHC-high macrophage","Tenocyte/Tendon fibroblast",
+                "Schwann cell"),
+              top_n = 50, filter_mode = "lenient")
+
+  
 ### Session information---------------------------------------------------------
 
 sessionInfo()
