@@ -1,4 +1,4 @@
-# Bulk microarray integration + limma reproduction script
+# Script 1: Bulk microarray integration + limma reproduction script
 # ────────────────────────────────────────────────────────────────────────────────
 # Purpose
 #   Build the 4-cohort integration pipeline.
