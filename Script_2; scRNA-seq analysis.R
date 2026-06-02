@@ -1,3 +1,5 @@
+## Script 2: scRNA-seq analysis
+
 ## 0) Environment setup (validated on R 4.5.1)----------------------------------
 
 if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
