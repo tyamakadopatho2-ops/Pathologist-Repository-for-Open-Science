@@ -1,7 +1,5 @@
-# NOTE: The R-scripts are not publicly available at this time because the degree examination is ongoing.
-
 # DMD Doctoral Dissetation Analysis — Special Branch
-This branch specifically archives the analysis scripts and reproducibility materials associated with my doctoral dissertation on Duchenne muscular dystrophy (DMD).
+This branch specifically archives the analysis scripts and reproducibility materials associated with my doctoral dissertation on Duchenne muscular dystrophy (DMD). Some comments, exploratory notes and section labels remain in Japanese because the analyses were originally developed in a local research workflow. These Japanese-language annotations do not affect the computational procedures, and they will be gradually translated into English in future updates.
 
 ## Contents and Purpose
 1) R scripts used for statistical analyses described in my doctoral dissertation.
