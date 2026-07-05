@@ -3,7 +3,8 @@ This branch specifically archives the analysis scripts and reproducibility mater
 
 ## Contents and Purpose
 1) R scripts used for statistical analyses described in my doctoral dissertation.
-2) Clearly documented methods, software versions, and random seeds for complete reproducibility.
+2) Clearly documented methods, software versions and random seeds for complete reproducibility.
+3) Graphical abstract legend and explanation of the analysis scripts.
 
 ## How to reproduce the analyses
 1) Download or clone this branch.  
@@ -18,7 +19,7 @@ Suggested wording:
 ## License
 Copyright (c) 2025 Tetsuhiro Yamakado.  
 Released under the Apache License, Version 2.0.  
-You may use, reproduce, and modify the code under the terms of that license. Third‑party dependencies remain under their own licenses.
+You may use, reproduce and modify the code under the terms of that license. Third‑party dependencies remain under their own licenses.
 
 ## Contact
 Tetsuhiro Yamakado — For questions or bug reports, please open an Issue in this repository.
