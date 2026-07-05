@@ -1,4 +1,4 @@
-![Graphical Abstract](<./Graphical Abstract.png>)
+<p align="center"><a href="Graphical%20Abstract.png"><img src="Graphical%20Abstract.png" alt="Graphical Abstract" width="50%"></a></p>
 
 [Graphical Abstract Legend and Explanation of the Analysis Scripts](<./Graphical Abstract Legend.pdf>)
 
