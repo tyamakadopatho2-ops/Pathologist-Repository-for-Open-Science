@@ -4,7 +4,7 @@ This branch specifically archives the analysis scripts and reproducibility mater
 ## Contents and Purpose
 1) R scripts used for statistical analyses described in my doctoral dissertation.
 2) Clearly documented methods, software versions and random seeds for complete reproducibility.
-3) Graphical abstract legend and explanation of the analysis scripts.
+3) Graphical abstract with its legend and explanation of the analysis scripts.
 
 ## How to reproduce the analyses
 1) Download or clone this branch.  
