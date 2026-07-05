@@ -1,3 +1,5 @@
+![Graphical Abstract](<./Graphical Abstract.png>)
+
 # Code Archive
 This branch provides analysis code accompanying “Myofibre Density Reveals a Critical Threshold Around Age 6 in Steroid-Naïve Duchenne Muscular Dystrophy: A Retrospective Observational Study,” now published in Neuropathology and Applied Neurobiology.
 
