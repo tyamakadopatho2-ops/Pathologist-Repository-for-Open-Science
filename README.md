@@ -1,5 +1,7 @@
 ![Graphical Abstract](<./Graphical Abstract.png>)
 
+[Graphical Abstract Legend and Explanation of the Analysis Scripts](<./Graphical Abstract Legend.pdf>)
+
 # DMD Doctoral Dissetation Analysis — Special Branch
 This branch specifically archives the analysis scripts and reproducibility materials associated with my doctoral dissertation on Duchenne muscular dystrophy (DMD). Some comments, exploratory notes and section labels remain in Japanese because the analyses were originally developed in a local research workflow. These Japanese-language annotations do not affect the computational procedures, and they will be gradually translated into English in future updates.
 
