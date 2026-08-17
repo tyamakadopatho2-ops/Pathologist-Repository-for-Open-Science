@@ -3416,3 +3416,105 @@ ggplot(data.frame(width = factor(rope_grid),
 ### The R version and package information used in this analysis are available below:
 sessionInfo() 
 # R version 4.3.2 (2023-10-31 ucrt)
+
+# Platform: x86_64-w64-mingw32/x64
+# Running under: Windows 11 x64 (build 26200)
+
+# Matrix products: default
+#   LAPACK version 3.12.1
+
+# locale:
+# [1] LC_COLLATE=Japanese_Japan.utf8  LC_CTYPE=Japanese_Japan.utf8   
+# [3] LC_MONETARY=Japanese_Japan.utf8 LC_NUMERIC=C                   
+# [5] LC_TIME=Japanese_Japan.utf8    
+
+# time zone: Asia/Tokyo
+# tzcode source: internal
+
+# attached base packages:
+# [1] stats     graphics  grDevices utils     datasets  methods   base     
+
+# loaded via a namespace (and not attached):
+#   [1] splines_4.5.0               bitops_1.0-9               
+#   [3] ggplotify_0.1.2             tibble_3.2.1               
+#   [5] R.oo_1.27.1                 brms_2.22.0                
+#   [7] XML_3.99-0.18               lifecycle_1.0.4            
+#   [9] Rdpack_2.6.4                StanHeaders_2.32.10        
+#  [11] lattice_0.22-7              MASS_7.3-65                
+#  [13] backports_1.5.0             magrittr_2.0.3             
+#  [15] limma_3.64.1                plotrix_3.8-4              
+#  [17] ggtangle_0.0.7              pkgbuild_1.4.8             
+#  [19] cowplot_1.2.0               DBI_1.2.3                  
+#  [21] minqa_1.2.8                 RColorBrewer_1.1-3         
+#  [23] abind_1.4-8                 GenomicRanges_1.60.0       
+#  [25] purrr_1.0.4                 R.utils_2.13.0             
+#  [27] BiocGenerics_0.54.0         hash_2.2.6.3               
+#  [29] yulab.utils_0.2.0           tensorA_0.36.2.1           
+#  [31] GenomeInfoDbData_1.2.14     IRanges_2.42.0             
+#  [33] S4Vectors_0.46.0            enrichplot_1.28.4          
+#  [35] ggrepel_0.9.6               inline_0.3.21              
+#  [37] tidytree_0.4.6              rentrez_1.2.4              
+#  [39] pheatmap_1.0.13             proto_1.0.0                
+#  [41] bridgesampling_1.1-2        codetools_0.2-20           
+#  [43] DelayedArray_0.34.1         DOSE_4.2.0                 
+#  [45] xml2_1.3.8                  tidyselect_1.2.1           
+#  [47] SuppDists_1.1-9.9           aplot_0.2.8                
+#  [49] bayesplot_1.13.0            UCSC.utils_1.4.0           
+#  [51] farver_2.1.2                lme4_1.1-37                
+#  [53] gmp_0.7-5                   matrixStats_1.5.0          
+#  [55] stats4_4.5.0                jsonlite_2.0.0             
+#  [57] Formula_1.2-5               ggridges_0.5.6             
+#  [59] BWStest_0.2.3               tools_4.5.0                
+#  [61] chron_2.3-62                treeio_1.32.0              
+#  [63] PMCMRplus_1.9.12            Rcpp_1.1.0                 
+#  [65] glue_1.8.0                  gridExtra_2.3              
+#  [67] SparseArray_1.8.0           kSamples_1.2-10            
+#  [69] qvalue_2.40.0               MatrixGenerics_1.20.0      
+#  [71] distributional_0.5.0        GenomeInfoDb_1.44.0        
+#  [73] dplyr_1.1.4                 loo_2.8.0                  
+#  [75] BiocManager_1.30.26         fastmap_1.2.0              
+#  [77] boot_1.3-31                 caTools_1.18.3             
+#  [79] digest_0.6.37               R6_2.6.1                   
+#  [81] gridGraphics_0.5-1          colorspace_2.1-1           
+#  [83] GO.db_3.21.0                effsize_0.8.1              
+#  [85] gtools_3.9.5                RSQLite_2.4.1              
+#  [87] R.methodsS3_1.8.2           tidyr_1.3.1                
+#  [89] generics_0.1.4              data.table_1.17.6          
+#  [91] httr_1.4.7                  S4Arrays_1.8.1             
+#  [93] sqldf_0.4-11                pkgconfig_2.0.3            
+#  [95] gtable_0.3.6                Rmpfr_1.0-0                
+#  [97] blob_1.2.4                  XVector_0.48.0             
+#  [99] clusterProfiler_4.16.0      carData_3.0-5              
+# [101] pwr_1.3-0                   fgsea_1.34.0               
+# [103] multcompView_0.1-10         scales_1.4.0               
+# [105] Biobase_2.68.0              png_0.1-8                  
+# [107] posterior_1.6.1             reformulas_0.4.1           
+# [109] ggfun_0.2.0                 rstudioapi_0.17.1          
+# [111] tzdb_0.5.0                  reshape2_1.4.4             
+# [113] coda_0.19-4.1               checkmate_2.3.2            
+# [115] nlme_3.1-168                nloptr_2.2.1               
+# [117] cachem_1.1.0                stringr_1.5.1              
+# [119] KernSmooth_2.23-26          parallel_4.5.0             
+# [121] AnnotationDbi_1.70.0        GEOquery_2.76.0            
+# [123] pillar_1.11.0               grid_4.5.0                 
+# [125] vctrs_0.6.5                 gplots_3.2.0               
+# [127] STRINGdb_2.20.0             car_3.1-3                  
+# [129] readr_2.1.5                 gsubfn_0.7                 
+# [131] mvtnorm_1.3-3               cli_3.6.5                  
+# [133] compiler_4.5.0              rlang_1.1.6                
+# [135] crayon_1.5.3                rstantools_2.4.0           
+# [137] plyr_1.8.9                  fs_1.6.6                   
+# [139] stringi_1.8.7               rstan_2.32.7               
+# [141] QuickJSR_1.7.0              BiocParallel_1.42.1        
+# [143] Biostrings_2.76.0           lazyeval_0.2.2             
+# [145] MBESS_4.9.41                Brobdingnag_1.2-9          
+# [147] GOSemSim_2.34.0             Matrix_1.7-3               
+# [149] hms_1.1.3                   patchwork_1.3.1            
+# [151] bit64_4.6.0-1               conflicted_1.2.0           
+# [153] ggplot2_3.5.2               KEGGREST_1.48.1            
+# [155] statmod_1.5.0               SummarizedExperiment_1.38.1
+# [157] rbibutils_2.3               igraph_2.1.4               
+# [159] memoise_2.0.1               RcppParallel_5.1.10        
+# [161] ggtree_3.16.3               fastmatch_1.1-6            
+# [163] bit_4.6.0                   ape_5.8-1                  
+# [165] gson_0.1.0      
